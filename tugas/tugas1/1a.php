@@ -12,9 +12,8 @@
 </head>
 <body>
    <h2> 
-    <em>"
-        <?php echo $topi . " " . "saya" . " " . $bundar; ?>,
-        <?php echo $bundar . " " . $topi ?> saya. "
+    <em>
+        <?php echo '"'. " " . $topi . " " . "saya" . " " . $bundar . ',' . " " . $bundar . " " . $topi . " " . "saya." . " " . '"';?>
     </em>
    </h2> 
 </body>
