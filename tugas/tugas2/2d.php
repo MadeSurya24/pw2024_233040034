@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tugas 2c</title>
+    <title>Tugas 2d</title>
     <style>
-        .flex {
+        .display {
             display: flex;
         }
         .kotak {
@@ -30,7 +30,7 @@
 </head>
 <body>
     <?php for ($i = 1; $i <= 5; $i++) { ?>
-        <div class="flex">
+        <div class="display">
             <?php for ($j = 1; $j <= 5; $j++) { ?>
                 <?php if (($i + $j) % 2 == 0  ) { ?>
                     <div class="kotak warna_kotak1"></div>
