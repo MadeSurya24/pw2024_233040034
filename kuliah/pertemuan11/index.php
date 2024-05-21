@@ -1,8 +1,8 @@
 <?php 
 
-require 
+require  'functions.php';
 
-$mahasiswa = $rows;
+$mahasiswa = query("SELECT * FROM mahasiswa");
 
 ?>
 
@@ -22,6 +22,9 @@ $mahasiswa = $rows;
 
        <h1>Daftar Mahasiswa</h1>
 
+       <a href="tambah.php" class="btn btn-primary
+       ">Tambah Data Mahasiswa</a> 
+
        <table class="table">
 
          <thead>
@@ -36,9 +39,10 @@ $mahasiswa = $rows;
          </thead>
 
          <tbody>
-            <?php foreach($mahasiswa as $mhs) : ?>
+            <?php $i = 1;
+            foreach($mahasiswa as $mhs) : ?>
             <tr>
-            <th scope="row">1</th>
+            <th scope="row"><?= $i++; ?></th>
             <td><?= $mhs['nama'] ?></td>
             <td><?= $mhs['nim'] ?></td>
             <td><?= $mhs['email'] ?></td>
